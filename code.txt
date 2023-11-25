@@ -44,6 +44,19 @@ void executeCommand(char command) {
     case '4':
       digitalWrite(relayPin4, !digitalRead(relayPin4));
       break;
+    // To turn off the relays, use '5', '6', '7', and '8'
+    case '5':
+      digitalWrite(relayPin1, LOW);
+      break;
+    case '6':
+      digitalWrite(relayPin2, LOW);
+      break;
+    case '7':
+      digitalWrite(relayPin3, LOW);
+      break;
+    case '8':
+      digitalWrite(relayPin4, LOW);
+      break;
     default:
       break;
   }
